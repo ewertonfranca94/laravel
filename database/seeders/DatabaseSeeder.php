@@ -21,13 +21,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             //UserSeeder::class
         ]);
-        Category::factory(4)->create();
-        Task::factory(30)->create();
-<<<<<<< HEAD
-        User::factory(10)->create();
-=======
         User::factory(100)->create();
->>>>>>> d6b97405e0ee79454731648a044c00e1996d366b
+        Category::factory(40)->create();
+        Task::factory(50)->create();
+        
 
     }
 }

@@ -20,6 +20,9 @@ class TaskFactory extends Factory
     {
         $user = User::all()->random();
 
+        while(count($user->categories) == 0){
+            $user = User::all()->random();
+        }
 
         return [
             //
